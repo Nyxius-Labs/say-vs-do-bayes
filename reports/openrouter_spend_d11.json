@@ -1,0 +1,58 @@
+{
+  "baseline_usage_usd": 0.0,
+  "baseline_at": "2026-11-12T05:27:28+00:00",
+  "cap_usd": 5.0,
+  "reconciliations": [
+    {
+      "when": "start",
+      "calls_since_start": 0,
+      "account_usage_usd": 0.0,
+      "account_run_spend_usd": 0.0,
+      "ledger_spent_usd": 0.0,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "start",
+      "calls_since_start": 0,
+      "account_usage_usd": 0.0,
+      "account_run_spend_usd": 0.0,
+      "ledger_spent_usd": 0.0,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "every 500 calls",
+      "calls_since_start": 500,
+      "account_usage_usd": 1.343279759,
+      "account_run_spend_usd": 1.343279759,
+      "ledger_spent_usd": 1.3904349648499998,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "end",
+      "calls_since_start": 675,
+      "account_usage_usd": 2.169838355,
+      "account_run_spend_usd": 2.169838355,
+      "ledger_spent_usd": 2.182613367995001,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "start",
+      "calls_since_start": 0,
+      "account_usage_usd": 2.169838355,
+      "account_run_spend_usd": 2.169838355,
+      "ledger_spent_usd": 2.182613367995,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "end",
+      "calls_since_start": 421,
+      "account_usage_usd": 2.218623577,
+      "account_run_spend_usd": 2.218623577,
+      "ledger_spent_usd": 2.230219684955,
+      "gap_added_usd": 0.0
+    }
+  ],
+  "logged_openrouter_usd": 2.2302196849550002,
+  "account_run_spend_usd": 2.218623577,
+  "checked_at": "2026-11-12T06:05:16+00:00"
+}

@@ -1,0 +1,11 @@
+{
+  "competition_stop_usd": 55.0,
+  "competition_hard_cap_usd": 60.0,
+  "rows_per_reasoning_on_config": "equal to the frozen main-grid calls per model (configs/frozen_competition.json: calls_per_model_main), so each reasoning-on row pairs item for item with its reasoning-off row",
+  "admission_rule": "D5 (DECISIONS.md): admit a reasoning-on row only for a model with a verified off-control (zero reasoning tokens), in the registered order, if cumulative spend (preliminary + projected control arm + main grid + rows admitted so far) stays <= 55; stop at the first eligible row that does not fit",
+  "token_source": "means measured in the preliminary run (reasoning-on gate row); output tokens include reasoning tokens",
+  "prelim_cap_usd": 8.0,
+  "spend_source": "the larger of logged per-call billed cost and the reseller's account-side usage records (reports/spend_reconciliation.json)",
+  "control_arm_halting": "D9 (DECISIONS.md): the registered run halts only if pooled G4 over the models that pass their own control-arm G1 fails, or fewer than 10 models pass their own control-arm G1. A model failing its own G1 or G3 is still run, flagged 'instrument not valid for this model', reported separately, and excluded from headline claims.",
+  "prelim_cap_basis": "D6: account-adjusted spend (account-side billed figure; log-only spend x 1.05)"
+}

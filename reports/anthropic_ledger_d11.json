@@ -1,0 +1,17 @@
+{
+  "ledger": "Anthropic, computed from token counts at list prices",
+  "cap_usd": 3.0,
+  "spent_usd": 0.1388278,
+  "calls": 80,
+  "prices": {
+    "Claude Opus 5.5": {
+      "price_in": 4.0,
+      "price_out": 20.0
+    },
+    "Claude Haiku 5.5": {
+      "price_in": 0.1,
+      "price_out": 0.5
+    }
+  },
+  "checked_at": "2026-11-12T06:52:24+00:00"
+}

@@ -1,0 +1,237 @@
+{
+  "decision": "D11",
+  "models": [
+    "Claude Opus 5.5",
+    "Claude Haiku 5.5",
+    "GPT-6.1 Sol",
+    "GPT-6 Luna",
+    "gpt-oss-120b",
+    "GPT-4o",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash",
+    "Grok 4.7",
+    "Qwen3.8 Max",
+    "Qwen3.8 27B",
+    "DeepSeek V4 Pro",
+    "Kimi K3.1 Pro",
+    "Llama 3.1 8B"
+  ],
+  "anthropic": {
+    "Claude Opus 5.5": {
+      "model_id": "claude-opus-5-5",
+      "price_in": 4.0,
+      "price_out": 20.0
+    },
+    "Claude Haiku 5.5": {
+      "model_id": "claude-haiku-5-5",
+      "price_in": 0.1,
+      "price_out": 0.5
+    }
+  },
+  "openrouter_pins": {
+    "Qwen3.8 Max": {
+      "id": "qwen/qwen3.8-max-0902",
+      "reason": "OpenRouter lists no undated qwen3.8-max; the 0902 snapshot is the only standard Qwen3.8 Max (qwen3.8-max-prime is a separately priced higher-throughput SKU)"
+    }
+  },
+  "design": {
+    "draws_main": 2,
+    "calls_per_model_main": 640,
+    "calls_per_model_control": 320,
+    "reasoning_on_rows": [
+      "Claude Haiku 5.5",
+      "DeepSeek V4 Pro"
+    ]
+  },
+  "smoke_calls_per_model": 20,
+  "smoke_max_tokens": 4096,
+  "reasoning_on_smoke_calls": 20,
+  "prelim_cap_usd": 5.0,
+  "openrouter_prelim_cap_usd": 5.0,
+  "anthropic_prelim_cap_usd": 3.0,
+  "openrouter_reconcile_every": 500,
+  "projection_abort_usd": 50.0,
+  "competition_log_dir": "logs/competition_d11",
+  "logs_only_spend_multiplier": 1.05,
+  "max_gate_attempts": 4,
+  "current_attempt": 4,
+  "attempt_openrouter_cap_usd": {
+    "4": 3.0
+  },
+  "d13": {
+    "gate_override": "run --registered proceeds although gate_passed is false only if DECISIONS.md contains a D13 entry, pooled G1-G4 of the last gate attempt passed, at least one gate model passed G1-G4 on its own, and every gate model that failed is listed in flagged_models (checked in src/dc/competition.py, gate_override)",
+    "flag_policy": "a model in flagged_models stays flagged \"instrument not valid for this model\" whatever its competition control arm shows; it is run, kept and reported separately, and excluded from headline claims; its measured control-arm G1 still counts toward the D9 halting rule (D13)",
+    "run_order": "the control arm for all 14 models first, with the D9 decision taken on it; then main grids one model at a time in the main-grid order; then the reasoning-on rows; the D5 $55 stop cuts only from the end of this order (D13)",
+    "main_grid_order": [
+      "Llama 3.1 8B",
+      "gpt-oss-120b",
+      "GPT-6 Luna",
+      "Claude Haiku 5.5",
+      "Gemini 3.8 Flash",
+      "GPT-4o",
+      "Qwen3.8 27B",
+      "DeepSeek V4 Pro",
+      "Kimi K3.1 Pro",
+      "Gemini 4 Argon",
+      "GPT-6.1 Sol",
+      "Claude Opus 5.5",
+      "Qwen3.8 Max",
+      "Grok 4.7"
+    ],
+    "reasoning_on_order": [
+      "Claude Haiku 5.5",
+      "DeepSeek V4 Pro"
+    ],
+    "aborted_first_attempt_logs": "`logs/competition` (committed under D13, excluded from the registered analysis; see the record after D14)"
+  },
+  "d14": {
+    "max_tokens": {
+      "Grok 4.7": 8192,
+      "Qwen3.8 Max": 8192
+    },
+    "basis": {
+      "Grok 4.7": "observed reasoning peak 4,790 tokens (D11 smoke)",
+      "Qwen3.8 Max": "observed reasoning peak 5,604 tokens (D11 smoke)"
+    }
+  },
+  "pinned_smoke": {
+    "decision": "D13",
+    "models": [
+      "GPT-6.1 Sol",
+      "GPT-6 Luna",
+      "GPT-4o",
+      "Gemini 4 Argon",
+      "Gemini 3.8 Flash",
+      "Grok 4.7",
+      "Qwen3.8 Max",
+      "Qwen3.8 27B",
+      "Kimi K3.1 Pro",
+      "Llama 3.1 8B"
+    ],
+    "calls_per_model": 20,
+    "practice_seed": 66548569,
+    "practice_prefix": "V",
+    "disjoint_from_attempts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_unparseable_share": 0.05,
+    "openrouter_cap_usd": 3.0,
+    "spend_file": "reports/openrouter_spend_pinned_smoke.json",
+    "report_file": "reports/pinned_smoke_d13.json",
+    "record_endpoint_status": [
+      "Gemini 4 Argon"
+    ]
+  },
+  "pinned_smoke_d16": {
+    "decision": "D16",
+    "models": [
+      "Claude Opus 5.5",
+      "Claude Haiku 5.5"
+    ],
+    "on_models": [
+      "Claude Haiku 5.5"
+    ],
+    "calls_per_model": 20,
+    "practice_seed": 81640217,
+    "practice_prefix": "V",
+    "disjoint_from_attempts": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "max_unparseable_share": 0.05,
+    "openrouter_cap_usd": 3.0,
+    "spend_file": "reports/openrouter_spend_pinned_smoke_d16.json",
+    "report_file": "reports/pinned_smoke_d16.json",
+    "record_endpoint_status": []
+  },
+  "attempts": {
+    "1": {
+      "decision": "D3 (original design)",
+      "models": [
+        [
+          "Claude Haiku 5.5",
+          "off"
+        ],
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ]
+      ],
+      "practice_seed": 7311977,
+      "practice_prefix": "P",
+      "n_practice": 200,
+      "reuse_control_from": {},
+      "disjoint_from_attempts": []
+    },
+    "2": {
+      "decision": "D7, D8",
+      "models": [
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ],
+        [
+          "gpt-oss-120b",
+          "off"
+        ]
+      ],
+      "practice_seed": 97799913,
+      "practice_prefix": "Q",
+      "n_practice": 100,
+      "reuse_control_from": {
+        "DeepSeek V4 Pro": 1
+      },
+      "disjoint_from_attempts": [
+        1
+      ]
+    },
+    "3": {
+      "decision": "D11 (gate re-run on the new routes; D7 gate models, D8 practice size, fresh seed)",
+      "models": [
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ],
+        [
+          "gpt-oss-120b",
+          "off"
+        ]
+      ],
+      "practice_seed": 35588301,
+      "practice_prefix": "R",
+      "n_practice": 100,
+      "reuse_control_from": {},
+      "disjoint_from_attempts": [
+        1,
+        2
+      ]
+    },
+    "4": {
+      "decision": "D12 (gate re-run on pinned hosts; D7 gate models, D8 practice size, fresh seed)",
+      "models": [
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ],
+        [
+          "gpt-oss-120b",
+          "off"
+        ]
+      ],
+      "practice_seed": 67897034,
+      "practice_prefix": "T",
+      "n_practice": 100,
+      "reuse_control_from": {},
+      "disjoint_from_attempts": [
+        1,
+        2,
+        3
+      ]
+    }
+  }
+}

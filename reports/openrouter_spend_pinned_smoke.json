@@ -1,0 +1,26 @@
+{
+  "baseline_usage_usd": 3.327430421,
+  "baseline_at": "2026-11-12T21:29:37+00:00",
+  "cap_usd": 3.0,
+  "reconciliations": [
+    {
+      "when": "start",
+      "calls_since_start": 0,
+      "account_usage_usd": 3.327430421,
+      "account_run_spend_usd": 0.0,
+      "ledger_spent_usd": 0.0,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "end",
+      "calls_since_start": 200,
+      "account_usage_usd": 3.686088516,
+      "account_run_spend_usd": 0.358658095,
+      "ledger_spent_usd": 0.4161093700000001,
+      "gap_added_usd": 0.0
+    }
+  ],
+  "logged_openrouter_usd": 0.41610937,
+  "account_run_spend_usd": 0.358658095,
+  "checked_at": "2026-11-12T21:30:39+00:00"
+}

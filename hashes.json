@@ -1,0 +1,65 @@
+{
+  "frozen_at": "2026-11-13T04:40:24+00:00",
+  "algorithm": "sha256",
+  "hashes": {
+    "prompt_templates": {
+      "sha256": "91905d2bc6470c31c509619fec0a43516f7c4638296e20eae03c2ddb87dc9b66",
+      "files": [
+        "configs/prompt_templates.json",
+        "src/dc/prompts.py"
+      ]
+    },
+    "thresholds_config": {
+      "sha256": "a25c150a99b88fb0a32c95eedd668e05dda00a4071da91b8bf2319610b9796a3",
+      "files": [
+        "configs/study.json"
+      ]
+    },
+    "scoring_code": {
+      "sha256": "babfd9f3705628d026c42f985ea882ec5920a5052a2b32f82b5130798cd83c26",
+      "files": [
+        "src/dc/scoring.py"
+      ]
+    },
+    "model_ids": {
+      "sha256": "0c29b65cfa13d8564df90dacdf8cba8a98182511b587376654714b8a43a0f2e2",
+      "files": [
+        "configs/models_resolved.json"
+      ]
+    },
+    "reasoning_on_order": {
+      "sha256": "c2eeb84728cc550ce15148bbe178bd88ae436d75d22891190fff74811ffb9497",
+      "files": [
+        "configs/reasoning_on_order.json"
+      ]
+    },
+    "stopping_rule": {
+      "sha256": "673a24f0dd274fb4fb5a34c6430b458ff6ce34165733232557da7bd1babf5646",
+      "files": [
+        "configs/stopping_rule.json"
+      ]
+    },
+    "frozen_competition_config": {
+      "sha256": "7a9484559d51f84cce8e56fbba038422c3a876b596f9724e0a2d29d2f4f0e9e5",
+      "files": [
+        "configs/frozen_competition.json"
+      ]
+    },
+    "decisions": {
+      "sha256": "2cca476f9dbb1f973773fc50aa3482f0d5eefbf42d2e1f6123d00954a7e7fcd7",
+      "files": [
+        "DECISIONS.md"
+      ]
+    },
+    "gate_config": {
+      "sha256": "9c8c14d5575ac7254df497a00e6bb07f7161a22654e91865a19ba51dd024269e",
+      "files": [
+        "configs/gate.json",
+        "configs/d11.json"
+      ]
+    }
+  },
+  "gate_passed": false,
+  "decision": "D15 (design v3)",
+  "status": "frozen under design v3 before any competition data"
+}

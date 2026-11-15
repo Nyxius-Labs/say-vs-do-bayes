@@ -1,0 +1,5 @@
+gate attempt 4: FAIL (G1 PASS, G2 PASS, G3 FAIL, G4 PASS)
+attempt 4 OpenRouter spend: account $1.0968, logged $1.0972 (cap $3.00)
+Projected competition cost at live prices: $35.07 (14 models x 960 calls, plus reasoning-on rows Claude Haiku 5.5, DeepSeek V4 Pro x 640 calls; abort threshold $50).
+OpenRouter share $28.70; Anthropic share $6.37; required OpenRouter balance $33.00 (projection + 15% buffer); projected cumulative $48.75 (D5 stop $55)
+exit 6

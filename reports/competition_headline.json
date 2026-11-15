@@ -1,0 +1,34 @@
+{
+  "share": 0.002213087777979273,
+  "weighting": "equal weight per model",
+  "per_model_share": {
+    "Claude Opus 5.5": 0.0,
+    "GPT-6.1 Sol": 0.0,
+    "Gemini 4 Argon": 0.0,
+    "Gemini 3.8 Flash": 0.004694835680751174,
+    "Grok 4.7": 0.0,
+    "Qwen3.8 Max": 0.008583690987124463
+  },
+  "share_pooled_trials": 0.002144388849177984,
+  "n_trials": 1399,
+  "n_models": 6,
+  "models": [
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash",
+    "Grok 4.7",
+    "Qwen3.8 Max"
+  ],
+  "not_estimable": {},
+  "left_out": {
+    "Claude Haiku 5.5": "instrument not valid for this model",
+    "GPT-6 Luna": "instrument not valid for this model",
+    "gpt-oss-120b": "instrument not valid for this model",
+    "GPT-4o": "instrument not valid for this model",
+    "Qwen3.8 27B": "instrument not valid for this model",
+    "DeepSeek V4 Pro": "instrument not valid for this model",
+    "Kimi K3.1 Pro": "instrument not valid for this model",
+    "Llama 3.1 8B": "instrument not valid for this model"
+  }
+}

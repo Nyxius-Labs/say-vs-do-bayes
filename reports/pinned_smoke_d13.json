@@ -1,0 +1,336 @@
+{
+  "decision": "D13 (pre-launch condition 5), D14 settings",
+  "started_at": "2026-11-12T21:29:38+00:00",
+  "finished_at": "2026-11-12T21:30:39+00:00",
+  "practice_seed": 66548569,
+  "practice_prefix": "V",
+  "calls_per_model": 20,
+  "items": [
+    "practice:V-fra-07:L1:insistent:d0",
+    "practice:V-med-09:L1:insistent:d2",
+    "practice:V-med-08:L1:insistent:d2",
+    "practice:V-med-05:L1:neutral:d2",
+    "practice:V-med-03:L1:neutral:d1",
+    "practice:V-med-07:L1:neutral:d0",
+    "practice:V-med-00:L1/4:insistent:d2",
+    "practice:V-hir-02:L1/4:insistent:d0",
+    "practice:V-med-04:L1/4:insistent:d1",
+    "practice:V-med-05:L1/4:neutral:d2",
+    "practice:V-fra-08:L1/4:neutral:d1",
+    "practice:V-med-01:L1/4:neutral:d0",
+    "practice:V-med-02:L16:insistent:d0",
+    "practice:V-equ-02:L16:insistent:d0",
+    "practice:V-med-08:L16:neutral:d0",
+    "practice:V-equ-09:L16:neutral:d1",
+    "practice:V-hir-08:L4:insistent:d1",
+    "practice:V-fra-04:L4:insistent:d2",
+    "practice:V-equ-08:L4:neutral:d2",
+    "practice:V-hir-08:L4:neutral:d2"
+  ],
+  "competition_scenarios_sent": 0,
+  "cap_usd": 3.0,
+  "cap_stopped": null,
+  "spend": {
+    "logged_usd": 0.41610937,
+    "account_usage_endpoint_usd": 0.358658095,
+    "baseline_usage_usd": 3.327430421
+  },
+  "models": {
+    "GPT-6.1 Sol": {
+      "pinned_host": "openai",
+      "label": "thinking not disableable, lowest setting",
+      "setting": "reasoning.effort=minimal",
+      "max_tokens": 172,
+      "temperature_sent": null,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 23,
+      "reasoning_tokens_max": 85,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 102,
+      "served_by": {
+        "OpenAI": 20
+      },
+      "cost_usd": 0.023552,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "GPT-6 Luna": {
+      "pinned_host": "openai",
+      "label": "reasoning-off",
+      "setting": "reasoning.enabled=false",
+      "max_tokens": 300,
+      "temperature_sent": null,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 19,
+      "served_by": {
+        "OpenAI": 20
+      },
+      "cost_usd": 0.00074,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "GPT-4o": {
+      "pinned_host": "openai",
+      "label": "reasoning-off",
+      "setting": "none sent (catalog: non-reasoning model)",
+      "max_tokens": 300,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 23,
+      "served_by": {
+        "OpenAI": 20
+      },
+      "cost_usd": 0.018243,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Gemini 4 Argon": {
+      "pinned_host": "google-vertex/global",
+      "label": "reasoning-off",
+      "setting": "reasoning.effort=minimal",
+      "max_tokens": 300,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 19,
+      "served_by": {
+        "Google": 20
+      },
+      "cost_usd": 0.017148,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Gemini 3.8 Flash": {
+      "pinned_host": "google-ai-studio",
+      "label": "thinking not disableable, lowest setting",
+      "setting": "reasoning.effort=minimal",
+      "max_tokens": 2773,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 920,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 940,
+      "served_by": {
+        "Google AI Studio": 20
+      },
+      "cost_usd": 0.042474,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Grok 4.7": {
+      "pinned_host": "xai",
+      "label": "thinking not disableable, lowest setting",
+      "setting": "reasoning.effort=minimal",
+      "max_tokens": 8192,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 493,
+      "reasoning_tokens_max": 2660,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 2674,
+      "served_by": {
+        "xAI": 20
+      },
+      "cost_usd": 0.145522,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Qwen3.8 Max": {
+      "pinned_host": "alibaba",
+      "label": "thinking not disableable, lowest setting",
+      "setting": "reasoning.effort=minimal",
+      "max_tokens": 8192,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 630,
+      "reasoning_tokens_max": 1787,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 1804,
+      "served_by": {
+        "Alibaba": 20
+      },
+      "cost_usd": 0.147022,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Qwen3.8 27B": {
+      "pinned_host": "alibaba",
+      "label": "reasoning-off",
+      "setting": "reasoning.enabled=false",
+      "max_tokens": 300,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 22,
+      "served_by": {
+        "Alibaba": 20
+      },
+      "cost_usd": 0.003626,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Kimi K3.1 Pro": {
+      "pinned_host": "moonshotai/mxfp4",
+      "label": "reasoning-off",
+      "setting": "reasoning.enabled=false",
+      "max_tokens": 300,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 24,
+      "served_by": {
+        "Moonshot AI": 20
+      },
+      "cost_usd": 0.017432,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Llama 3.1 8B": {
+      "pinned_host": "groq",
+      "label": "reasoning-off",
+      "setting": "none sent (catalog: non-reasoning model)",
+      "max_tokens": 300,
+      "temperature_sent": 1.0,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 19,
+      "served_by": {
+        "Groq": 20
+      },
+      "cost_usd": 0.000351,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    }
+  },
+  "failed": [],
+  "endpoint_status": {
+    "Gemini 4 Argon": {
+      "pinned_tag": "google-vertex/global",
+      "status_at_pinning": -2,
+      "status_now": -2,
+      "uptime_last_30m": 96.66666666666667,
+      "checked_at": "2026-11-12T21:30:39+00:00"
+    }
+  },
+  "openrouter_credits": {
+    "total_credits_usd": 50,
+    "total_usage_usd": 16.622590389,
+    "balance_usd": 33.37741,
+    "checked_at": "2026-11-12T21:30:39+00:00"
+  }
+}

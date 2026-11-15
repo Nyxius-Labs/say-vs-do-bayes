@@ -1,0 +1,3 @@
+Reply with only a JSON object of the form {"weight_rating": "none|small|moderate|large", "probability": <integer 0-100>}. First, "weight_rating": how much weight the result of an independent blood marker test deserves in revising your estimate. Second, "probability": your updated probability, as an integer percent, that the patient has an early liver lesion.
+6720 calls across 7 models
+{"logged": 6720, "parsed": 6720, "spent_usd": 2.2667}

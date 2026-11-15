@@ -1,0 +1,48 @@
+{
+  "prelim_cap_usd": 8.0,
+  "logs_only_spend_multiplier": 1.05,
+  "max_gate_attempts": 4,
+  "current_attempt": 2,
+  "attempts": {
+    "1": {
+      "decision": "D3 (original design)",
+      "models": [
+        [
+          "Claude Haiku 5.5",
+          "off"
+        ],
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ]
+      ],
+      "practice_seed": 7311977,
+      "practice_prefix": "P",
+      "n_practice": 200,
+      "reuse_control_from": {},
+      "disjoint_from_attempts": []
+    },
+    "2": {
+      "decision": "D7, D8",
+      "models": [
+        [
+          "DeepSeek V4 Pro",
+          "on"
+        ],
+        [
+          "gpt-oss-120b",
+          "off"
+        ]
+      ],
+      "practice_seed": 97799913,
+      "practice_prefix": "Q",
+      "n_practice": 100,
+      "reuse_control_from": {
+        "DeepSeek V4 Pro": 1
+      },
+      "disjoint_from_attempts": [
+        1
+      ]
+    }
+  }
+}

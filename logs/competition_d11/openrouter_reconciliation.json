@@ -1,0 +1,314 @@
+[
+  {
+    "when": "start",
+    "calls_since_start": 0,
+    "account_usage_usd": 2.302587845,
+    "account_run_spend_usd": 2.170140545,
+    "ledger_spent_usd": 2.170140545,
+    "gap_added_usd": 0.012702475000000213
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 500,
+    "account_usage_usd": 3.528733845,
+    "account_run_spend_usd": 3.396286545,
+    "ledger_spent_usd": 3.590693044999997,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 1005,
+    "account_usage_usd": 5.204731245,
+    "account_run_spend_usd": 5.072283945,
+    "ledger_spent_usd": 5.171677844999999,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 1500,
+    "account_usage_usd": 6.007756245,
+    "account_run_spend_usd": 5.8753089450000004,
+    "ledger_spent_usd": 5.946067445000011,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 2000,
+    "account_usage_usd": 7.151485645,
+    "account_run_spend_usd": 7.019038345,
+    "ledger_spent_usd": 7.261136395000013,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 2500,
+    "account_usage_usd": 10.683784245,
+    "account_run_spend_usd": 10.551336945,
+    "ledger_spent_usd": 10.702303544999996,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 3000,
+    "account_usage_usd": 13.32785557,
+    "account_run_spend_usd": 13.19540827,
+    "ledger_spent_usd": 13.313664269999999,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 3502,
+    "account_usage_usd": 16.55987957,
+    "account_run_spend_usd": 16.42743227,
+    "ledger_spent_usd": 16.58176027,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 4000,
+    "account_usage_usd": 17.49928357,
+    "account_run_spend_usd": 17.36683627,
+    "ledger_spent_usd": 17.44504826999997,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 4500,
+    "account_usage_usd": 18.16114957,
+    "account_run_spend_usd": 18.02870227,
+    "ledger_spent_usd": 18.045490269999952,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 5000,
+    "account_usage_usd": 18.61415357,
+    "account_run_spend_usd": 18.48170627,
+    "ledger_spent_usd": 18.49083226999986,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 5501,
+    "account_usage_usd": 19.15251157,
+    "account_run_spend_usd": 19.020064270000002,
+    "ledger_spent_usd": 19.039280269999857,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 6000,
+    "account_usage_usd": 22.31306557,
+    "account_run_spend_usd": 22.18061827,
+    "ledger_spent_usd": 22.21698626999988,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 6500,
+    "account_usage_usd": 27.73029157,
+    "account_run_spend_usd": 27.59784427,
+    "ledger_spent_usd": 27.69091026999983,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 7000,
+    "account_usage_usd": 31.11896557,
+    "account_run_spend_usd": 30.98651827,
+    "ledger_spent_usd": 31.02298026999983,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 7500,
+    "account_usage_usd": 34.60882032,
+    "account_run_spend_usd": 34.47637302,
+    "ledger_spent_usd": 34.59935976999984,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 8000,
+    "account_usage_usd": 35.80380457,
+    "account_run_spend_usd": 35.671357269999994,
+    "ledger_spent_usd": 35.754545769999865,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 8501,
+    "account_usage_usd": 37.44382957,
+    "account_run_spend_usd": 37.311382269999996,
+    "ledger_spent_usd": 37.3202501699998,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 9002,
+    "account_usage_usd": 37.46803457,
+    "account_run_spend_usd": 37.33558727,
+    "ledger_spent_usd": 37.33867097000021,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 9503,
+    "account_usage_usd": 37.63475207,
+    "account_run_spend_usd": 37.502304769999995,
+    "ledger_spent_usd": 37.51412876999967,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 10000,
+    "account_usage_usd": 38.04894327,
+    "account_run_spend_usd": 37.91649597,
+    "ledger_spent_usd": 37.94420197000005,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 10506,
+    "account_usage_usd": 38.34406737,
+    "account_run_spend_usd": 38.211620069999995,
+    "ledger_spent_usd": 38.25366367000048,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 11001,
+    "account_usage_usd": 38.48570797,
+    "account_run_spend_usd": 38.35326067,
+    "ledger_spent_usd": 38.38919067000037,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 11500,
+    "account_usage_usd": 38.60441347,
+    "account_run_spend_usd": 38.471966169999995,
+    "ledger_spent_usd": 38.47765987000039,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 12000,
+    "account_usage_usd": 38.63393077,
+    "account_run_spend_usd": 38.50148347,
+    "ledger_spent_usd": 38.51629637000023,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 12501,
+    "account_usage_usd": 38.66157997,
+    "account_run_spend_usd": 38.529132669999996,
+    "ledger_spent_usd": 38.66219837000024,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 13005,
+    "account_usage_usd": 38.88060867,
+    "account_run_spend_usd": 38.74816137,
+    "ledger_spent_usd": 38.88630847000023,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 13503,
+    "account_usage_usd": 39.23695267,
+    "account_run_spend_usd": 39.10450537,
+    "ledger_spent_usd": 39.28041527000032,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 14003,
+    "account_usage_usd": 39.67056757,
+    "account_run_spend_usd": 39.53812027,
+    "ledger_spent_usd": 39.73308527000027,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 14503,
+    "account_usage_usd": 40.03776322,
+    "account_run_spend_usd": 39.90531592,
+    "ledger_spent_usd": 39.918464995000306,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 15003,
+    "account_usage_usd": 40.13774362,
+    "account_run_spend_usd": 40.00529632,
+    "ledger_spent_usd": 40.01169852000013,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 15500,
+    "account_usage_usd": 40.15695532,
+    "account_run_spend_usd": 40.02450802,
+    "ledger_spent_usd": 40.037065215000105,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 16004,
+    "account_usage_usd": 40.167742875,
+    "account_run_spend_usd": 40.035295575,
+    "ledger_spent_usd": 40.04589878499998,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 16500,
+    "account_usage_usd": 41.547338405,
+    "account_run_spend_usd": 41.414891104999995,
+    "ledger_spent_usd": 41.43741110499986,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 17001,
+    "account_usage_usd": 44.199648705,
+    "account_run_spend_usd": 44.067201405,
+    "ledger_spent_usd": 44.08256630499986,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 17500,
+    "account_usage_usd": 45.007221405,
+    "account_run_spend_usd": 44.874774105,
+    "ledger_spent_usd": 44.938414304999796,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 18000,
+    "account_usage_usd": 46.311035005,
+    "account_run_spend_usd": 46.178587705,
+    "ledger_spent_usd": 46.18718570499974,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "every 500 calls",
+    "calls_since_start": 18500,
+    "account_usage_usd": 46.465203705,
+    "account_run_spend_usd": 46.332756405,
+    "ledger_spent_usd": 46.34452760499973,
+    "gap_added_usd": 0.0
+  },
+  {
+    "when": "end of run",
+    "calls_since_start": 18957,
+    "account_usage_usd": 46.634647505,
+    "account_run_spend_usd": 46.502200204999994,
+    "ledger_spent_usd": 46.51440480499972,
+    "gap_added_usd": 0.0
+  }
+]

@@ -1,0 +1,122 @@
+{
+  "decision": "D16",
+  "started_at": "2026-11-13T04:40:09+00:00",
+  "finished_at": "2026-11-13T04:40:16+00:00",
+  "practice_seed": 81640217,
+  "practice_prefix": "V",
+  "calls_per_model": 20,
+  "items": [
+    "practice:V-equ-09:L1:insistent:d2",
+    "practice:V-med-07:L1:insistent:d1",
+    "practice:V-med-09:L1:insistent:d2",
+    "practice:V-equ-08:L1:neutral:d2",
+    "practice:V-fra-02:L1:neutral:d2",
+    "practice:V-med-05:L1:neutral:d2",
+    "practice:V-equ-07:L1/4:insistent:d2",
+    "practice:V-fra-06:L1/4:insistent:d0",
+    "practice:V-hir-05:L1/4:insistent:d2",
+    "practice:V-equ-00:L1/4:neutral:d0",
+    "practice:V-med-04:L1/4:neutral:d0",
+    "practice:V-hir-09:L1/4:neutral:d2",
+    "practice:V-fra-08:L16:insistent:d2",
+    "practice:V-hir-05:L16:insistent:d0",
+    "practice:V-hir-04:L16:neutral:d2",
+    "practice:V-equ-07:L16:neutral:d2",
+    "practice:V-hir-03:L4:insistent:d0",
+    "practice:V-equ-07:L4:insistent:d0",
+    "practice:V-hir-04:L4:neutral:d0",
+    "practice:V-hir-00:L4:neutral:d0"
+  ],
+  "competition_scenarios_sent": 0,
+  "cap_usd": 3.0,
+  "cap_stopped": null,
+  "spend": {
+    "logged_usd": 0.55215247,
+    "account_usage_endpoint_usd": 0.1324473,
+    "baseline_usage_usd": 0.0
+  },
+  "models": {
+    "Claude Opus 5.5": {
+      "pinned_host": "anthropic",
+      "label": "thinking not disableable, lowest setting",
+      "setting": "reasoning.effort=low",
+      "max_tokens": 622,
+      "temperature_sent": null,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 133,
+      "reasoning_tokens_max": 349,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 371,
+      "served_by": {
+        "Anthropic": 20
+      },
+      "cost_usd": 0.127672,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Claude Haiku 5.5": {
+      "pinned_host": "anthropic",
+      "label": "reasoning-off",
+      "setting": "reasoning.enabled=false",
+      "max_tokens": 300,
+      "temperature_sent": null,
+      "calls": 20,
+      "errors": 0,
+      "error_samples": [],
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 0,
+      "reasoning_tokens_max": 0,
+      "reasoning_tokens_not_reported": 0,
+      "max_output_tokens": 21,
+      "served_by": {
+        "Anthropic": 20
+      },
+      "cost_usd": 0.001559,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    },
+    "Claude Haiku 5.5 [reasoning on]": {
+      "pinned_host": "anthropic",
+      "setting": "reasoning.effort=medium",
+      "calls": 20,
+      "unparseable": 0,
+      "output_limit_hit": 0,
+      "reasoning_tokens_min": 346,
+      "reasoning_tokens_max": 1309,
+      "cost_usd": 0.006812,
+      "checks": {
+        "all_calls_returned": true,
+        "answers_parse": true,
+        "output_limit_not_hit": true,
+        "reasoning_setting_honored": true,
+        "served_by_pinned_host": true
+      },
+      "pass": true
+    }
+  },
+  "failed": [],
+  "endpoint_status": {},
+  "openrouter_credits": {
+    "total_credits_usd": 160,
+    "total_usage_usd": 155.49207827,
+    "balance_usd": 4.507922,
+    "checked_at": "2026-11-13T04:40:16+00:00"
+  }
+}

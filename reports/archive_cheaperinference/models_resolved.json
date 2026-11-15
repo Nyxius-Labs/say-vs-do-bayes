@@ -1,0 +1,909 @@
+{
+  "resolved_at": "2026-11-12T02:14:30+00:00",
+  "reseller_base_url": "https://api.cheaperinference.com/v1",
+  "models": [
+    {
+      "name": "Claude Opus 5.5",
+      "developer": "Anthropic",
+      "anchor": true,
+      "spec_price_in": 2.6,
+      "spec_price_out": 13.0,
+      "price_in": 2.6,
+      "price_out": 13.0,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "claude-opus-5.5",
+      "reseller_matches": [
+        "claude-opus-5.5",
+        "claude-opus-5.5-batch",
+        "claude-opus-5.5-fast"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        4.0,
+        20.0
+      ],
+      "skipped": null,
+      "direct": {
+        "provider": "anthropic",
+        "direct_id": null,
+        "status": "skipped: ANTHROPIC_API_KEY not set"
+      },
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=381, output=399)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=352, output=370)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=981, output=999)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=691, output=709)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 3804,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 4816,
+          "p95_output_tokens_per_attempt": 1901.5999999999938
+        }
+      }
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "developer": "Anthropic",
+      "anchor": false,
+      "spec_price_in": 0.085,
+      "spec_price_out": 0.424,
+      "price_in": 0.065,
+      "price_out": 0.325,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "claude-haiku-5.5",
+      "reseller_matches": [
+        "claude-haiku-5.5",
+        "claude-haiku-5.5-batch"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.1,
+        0.5
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller#d1d2",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "reasoning-off",
+        "response_format": "json_schema",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 46,
+          "unparseable_share_json_only": 0.475,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 300.0
+        }
+      }
+    },
+    {
+      "name": "GPT-6.1 Sol",
+      "developer": "OpenAI",
+      "anchor": true,
+      "spec_price_in": 1.3,
+      "spec_price_out": 6.5,
+      "price_in": 1.3,
+      "price_out": 6.5,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gpt-6.1-sol",
+      "reseller_matches": [
+        "gpt-6.1-sol",
+        "gpt-6.1-sol-batch",
+        "gpt-6.1-sol-fast"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.0,
+        10.0
+      ],
+      "skipped": null,
+      "direct": {
+        "provider": "openai",
+        "direct_id": null,
+        "status": "skipped: OPENAI_API_KEY not set"
+      },
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=391, output=402)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=279, output=293)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=250, output=264)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=1000, output=1014)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 4096,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 6928,
+          "p95_output_tokens_per_attempt": 3224.8499999999917
+        }
+      }
+    },
+    {
+      "name": "GPT-6 Luna",
+      "developer": "OpenAI",
+      "anchor": false,
+      "spec_price_in": 0.085,
+      "spec_price_out": 0.425,
+      "price_in": 0.065,
+      "price_out": 0.325,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gpt-6-luna",
+      "reseller_matches": [
+        "gpt-6-luna",
+        "gpt-6-luna-batch",
+        "gpt-6-luna-decisions",
+        "gpt-6-luna-fast"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.1,
+        0.5
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "reasoning-off (unverified: reasoning tokens not reported)",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 16.0
+        }
+      }
+    },
+    {
+      "name": "gpt-oss-120b",
+      "developer": "OpenAI",
+      "anchor": false,
+      "spec_price_in": 0.052,
+      "spec_price_out": 0.26,
+      "price_in": 0.052,
+      "price_out": 0.26,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gpt-oss-120b",
+      "reseller_matches": [
+        "gpt-oss-120b"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": false,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.13,
+        0.65
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "quirks": [
+        "none sent (catalog: non-reasoning model) accepted but spent reasoning tokens (reasoning=596, output=600)",
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=596, output=600)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=596, output=600)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=596, output=600)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=596, output=600)",
+        "no candidate honored reasoning-off; using lowest accepted setting",
+        "JSON truncated at max_tokens=600; D1 rule re-applied to re-smoke measurements -> max_tokens=1200 (tag off@reseller#d1d2r2)"
+      ],
+      "off_config": {
+        "tag": "off@reseller#d1d2r2",
+        "setting": {
+          "label": "none sent (catalog: non-reasoning model)",
+          "params": {}
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_schema",
+        "max_tokens": 1200,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 1.0,
+          "max_reasoning_tokens": 596,
+          "p95_output_tokens_per_attempt": 300.0
+        }
+      }
+    },
+    {
+      "name": "GPT-4o",
+      "developer": "OpenAI",
+      "anchor": false,
+      "spec_price_in": 1.63,
+      "spec_price_out": 6.5,
+      "price_in": 1.625,
+      "price_out": 6.5,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gpt-4o",
+      "reseller_matches": [
+        "gpt-4o",
+        "gpt-4o-batch",
+        "gpt-4o-fast",
+        "gpt-4o-mini",
+        "gpt-4o-mini-batch",
+        "gpt-4o-mini-fast",
+        "gpt-4o-mini-transcribe",
+        "gpt-4o-transcribe"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": false,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.5,
+        10.0
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "none sent (catalog: non-reasoning model)",
+          "params": {}
+        },
+        "label_class": "reasoning-off",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 19.0
+        }
+      }
+    },
+    {
+      "name": "Gemini 4 Argon",
+      "developer": "Google",
+      "anchor": true,
+      "spec_price_in": 0.9,
+      "spec_price_out": 4.5,
+      "price_in": 0.9,
+      "price_out": 4.5,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gemini-4-argon",
+      "reseller_matches": [
+        "gemini-4-argon"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.0,
+        10.0
+      ],
+      "skipped": null,
+      "direct": {
+        "provider": "google",
+        "direct_id": null,
+        "status": "skipped: GEMINI_API_KEY/GOOGLE_API_KEY not set"
+      },
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=436, output=452)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=346, output=362)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=457, output=473)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=583, output=599)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 4096,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 5460,
+          "p95_output_tokens_per_attempt": 4447.949999999998
+        }
+      }
+    },
+    {
+      "name": "Gemini 3.8 Flash",
+      "developer": "Google",
+      "anchor": false,
+      "spec_price_in": 0.338,
+      "spec_price_out": 1.69,
+      "price_in": 0.3375,
+      "price_out": 1.6875,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "gemini-3.8-flash",
+      "reseller_matches": [
+        "gemini-3.8-flash",
+        "gemini-3.8-flash-lite-tts",
+        "gemini-3.8-flash-tts"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.75,
+        3.75
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false rejected: HTTP 400: Gemini 3 thinking cannot be disabled. Supported reasoning effort values are minimal, low, medium, and high.",
+        "reasoning.effort=none rejected: HTTP 400: Gemini 3 thinking cannot be disabled. Supported reasoning effort values are minimal, low, medium, and high.",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=287, output=303)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=301, output=317)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.effort=minimal",
+          "params": {
+            "reasoning": {
+              "effort": "minimal"
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 3098,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 3961,
+          "p95_output_tokens_per_attempt": 1548.9499999999975
+        }
+      }
+    },
+    {
+      "name": "Grok 4.7",
+      "developer": "xAI",
+      "anchor": true,
+      "spec_price_in": 1.3,
+      "spec_price_out": 3.9,
+      "price_in": 1.3,
+      "price_out": 3.9,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "grok-4.7",
+      "reseller_matches": [
+        "grok-4.7"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.0,
+        6.0
+      ],
+      "skipped": null,
+      "direct": {
+        "provider": "xai",
+        "direct_id": null,
+        "status": "skipped: XAI_API_KEY not set"
+      },
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=388, output=403)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=440, output=455)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=1149, output=1164)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=395, output=410)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 4096,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 4454,
+          "p95_output_tokens_per_attempt": 2316.499999999999
+        }
+      }
+    },
+    {
+      "name": "Qwen3.8 Max",
+      "developer": "Alibaba",
+      "anchor": false,
+      "spec_price_in": 1.3,
+      "spec_price_out": 3.9,
+      "price_in": 1.3,
+      "price_out": 3.9,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "qwen3.8-max",
+      "reseller_matches": [
+        "qwen3.8-max-0902",
+        "qwen3.8-max-prime",
+        "qwen3.8-max"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.0,
+        6.0
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false accepted but spent reasoning tokens (reasoning=241, output=255)",
+        "reasoning.effort=none accepted but spent reasoning tokens (reasoning=2011, output=2025)",
+        "reasoning.effort=minimal accepted but spent reasoning tokens (reasoning=508, output=522)",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=760, output=774)",
+        "no candidate honored reasoning-off; using lowest accepted setting"
+      ],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_only",
+        "max_tokens": 4096,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 6556,
+          "p95_output_tokens_per_attempt": 3714.1
+        }
+      }
+    },
+    {
+      "name": "Qwen3.8 27B",
+      "developer": "Alibaba",
+      "anchor": false,
+      "spec_price_in": 0.325,
+      "spec_price_out": 1.95,
+      "price_in": 0.325,
+      "price_out": 1.95,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "qwen3.8-27b",
+      "reseller_matches": [
+        "qwen3.8-27b"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.5,
+        3.0
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "reasoning-off",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 22.049999999999997
+        }
+      }
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "developer": "DeepSeek",
+      "anchor": false,
+      "spec_price_in": 0.455,
+      "spec_price_out": 1.37,
+      "price_in": 0.858,
+      "price_out": 2.574,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "deepseek-v4-pro",
+      "reseller_matches": [
+        "deepseek-v4-pro",
+        "deepseek-v4-pro-0813"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        1.32,
+        3.96
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [],
+      "reasoning_on": {
+        "label": "reasoning.effort=medium",
+        "params": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      },
+      "off_config": {
+        "tag": "off@reseller#d1d2",
+        "setting": {
+          "label": "reasoning=false",
+          "params": {
+            "reasoning": false
+          }
+        },
+        "label_class": "reasoning-off",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.025,
+          "max_reasoning_tokens": 417,
+          "p95_output_tokens_per_attempt": 161.5
+        }
+      }
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "developer": "Moonshot",
+      "anchor": false,
+      "spec_price_in": 1.3,
+      "spec_price_out": 6.5,
+      "price_in": 1.3,
+      "price_out": 6.5,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "kimi-k3.1-pro",
+      "reseller_matches": [
+        "kimi-k3.1-pro",
+        "kimi-k3.1-pro-highspeed"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        2.0,
+        10.0
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "reasoning.enabled=false",
+          "params": {
+            "reasoning": {
+              "enabled": false
+            }
+          }
+        },
+        "label_class": "reasoning-off (unverified: reasoning tokens not reported)",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 21.0
+        }
+      }
+    },
+    {
+      "name": "Mistral Large 4",
+      "developer": "Mistral",
+      "anchor": false,
+      "spec_price_in": 0.578,
+      "spec_price_out": 1.78,
+      "price_in": 0.473941,
+      "price_out": 1.456673,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "mistral-large-4",
+      "reseller_matches": [
+        "mistral-large-4"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": true,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.68,
+        2.09
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "reasoning.effort=low",
+        "params": {
+          "reasoning": {
+            "effort": "low"
+          }
+        }
+      },
+      "quirks": [
+        "reasoning.enabled=false rejected: HTTP 400: reasoning_effort none is not supported for this model, supported values: [<ReasoningEffort.high: 'high'>, <ReasoningEffort.low: 'low'>, <ReasoningEffo",
+        "reasoning.effort=none rejected: HTTP 400: reasoning_effort none is not supported for this model, supported values: [<ReasoningEffort.high: 'high'>, <ReasoningEffort.low: 'low'>, <ReasoningEffo",
+        "reasoning.effort=minimal rejected: HTTP 400: Every route for mistral-large-4 rejected this request as invalid, but none said which part. Check the request against the API reference and retry; quo",
+        "reasoning.effort=low accepted but spent reasoning tokens (reasoning=598, output=600)",
+        "no candidate honored reasoning-off; using lowest accepted setting",
+        "JSON truncated at max_tokens=600; D1 rule re-applied to re-smoke measurements -> max_tokens=1200 (tag off@reseller#d1d2r2)",
+        "JSON truncated at max_tokens=1200; D1 rule re-applied to re-smoke measurements -> max_tokens=2400 (tag off@reseller#d1d2r3)",
+        "JSON truncated at max_tokens=2400; D1 rule re-applied to re-smoke measurements -> max_tokens=4096 (tag off@reseller#d1d2r4)"
+      ],
+      "off_config": {
+        "tag": "off@reseller#d1d2r4",
+        "setting": {
+          "label": "reasoning.effort=low",
+          "params": {
+            "reasoning": {
+              "effort": "low"
+            }
+          }
+        },
+        "label_class": "thinking not disableable, lowest setting",
+        "response_format": "json_schema",
+        "max_tokens": 4096,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 1.0,
+          "max_reasoning_tokens": 598,
+          "p95_output_tokens_per_attempt": 300.0
+        }
+      }
+    },
+    {
+      "name": "Llama 3.1 8B",
+      "developer": "Meta",
+      "anchor": false,
+      "spec_price_in": 0.017,
+      "spec_price_out": 0.034,
+      "price_in": 0.013,
+      "price_out": 0.026,
+      "price_source": "CheaperInference catalog (live)",
+      "reseller_id": "llama-3.1-8b",
+      "reseller_matches": [
+        "llama-3.1-8b"
+      ],
+      "resolution_note": "plain variant",
+      "catalog_reasoning_capable": false,
+      "catalog_endpoints": [
+        "/v1/chat/completions",
+        "/v1/responses",
+        "/v1/messages"
+      ],
+      "catalog_list_price": [
+        0.02,
+        0.04
+      ],
+      "skipped": null,
+      "reasoning_off": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "quirks": [],
+      "off_config": {
+        "tag": "off@reseller",
+        "setting": {
+          "label": "none sent (catalog: non-reasoning model)",
+          "params": {}
+        },
+        "label_class": "reasoning-off",
+        "response_format": "json_only",
+        "max_tokens": 300,
+        "basis": {
+          "smoke_calls_at_setting": 40,
+          "unparseable_share_json_only": 0.0,
+          "max_reasoning_tokens": 0,
+          "p95_output_tokens_per_attempt": 19.0
+        }
+      }
+    }
+  ],
+  "reseller_status": "ok: 569 catalog entries",
+  "catalog_size": 569
+}

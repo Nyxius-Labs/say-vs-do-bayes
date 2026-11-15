@@ -1,0 +1,17 @@
+[project]
+name = "say-vs-do-bayes"
+version = "1.0.0"
+description = "Language model updating measured against exact Bayesian answers: what a model says an objection is worth versus how far it moves."
+requires-python = ">=3.11"
+dependencies = ["httpx>=0.27"]
+
+[project.optional-dependencies]
+analysis = ["matplotlib>=3.8"]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

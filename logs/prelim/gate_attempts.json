@@ -1,0 +1,20 @@
+{
+  "attempts": [
+    {
+      "attempt": 1,
+      "templates_sha": "76e1965eae21db2d9832e3935e4d8836f45e24e8c8312db6da886ce858631ebf",
+      "templates_version": "v1",
+      "revision": null,
+      "n_practice": 200,
+      "result": "FAIL"
+    },
+    {
+      "attempt": 2,
+      "templates_sha": "76e1965eae21db2d9832e3935e4d8836f45e24e8c8312db6da886ce858631ebf",
+      "templates_version": "v1",
+      "revision": null,
+      "n_practice": 100,
+      "result": "PASS"
+    }
+  ]
+}

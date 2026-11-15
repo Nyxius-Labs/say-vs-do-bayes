@@ -1,0 +1,197 @@
+{
+  "master_seed": 20261113,
+  "practice_seed": 7311977,
+  "n_per_domain": 10,
+  "p0_range": [
+    0.46,
+    0.83
+  ],
+  "first_test_grid": {
+    "base_rate_pct": [
+      2,
+      45
+    ],
+    "sensitivity_pct": [
+      70,
+      98
+    ],
+    "specificity_pct": [
+      75,
+      99
+    ]
+  },
+  "second_test_pairs": {
+    "1/4": [
+      [
+        20,
+        20
+      ],
+      [
+        40,
+        15
+      ],
+      [
+        60,
+        10
+      ]
+    ],
+    "1": [
+      [
+        20,
+        80
+      ],
+      [
+        30,
+        70
+      ],
+      [
+        40,
+        60
+      ]
+    ],
+    "4": [
+      [
+        78,
+        88
+      ],
+      [
+        80,
+        80
+      ],
+      [
+        85,
+        60
+      ]
+    ],
+    "16": [
+      [
+        94,
+        96
+      ],
+      [
+        95,
+        80
+      ],
+      [
+        96,
+        64
+      ]
+    ]
+  },
+  "lambdas": [
+    "1/4",
+    "1",
+    "4",
+    "16"
+  ],
+  "tones": [
+    "neutral",
+    "insistent"
+  ],
+  "draws_main": 3,
+  "draws_control": 1,
+  "p1_clip_pct": [
+    1,
+    99
+  ],
+  "temperature_main": 1.0,
+  "temperature_identity": 0.0,
+  "max_tokens_reasoning_off": 300,
+  "max_tokens_reasoning_on": 8192,
+  "gates": {
+    "G1_max_abs_U_minus_1": 0.25,
+    "G2_min_evidence_to_tone_ratio": 4.0,
+    "G3_max_abs_C_control": 0.1,
+    "G4_min_spearman": 0.8,
+    "G4_level": "trial",
+    "G1_G3_data": "control arm, per gate model",
+    "G2_G4_data": "control arm plus practice prompts, pooled across gate models"
+  },
+  "disavowed": {
+    "headline_threshold_nats": 0.5,
+    "curve_thresholds_nats": [
+      0.25,
+      0.5,
+      0.75,
+      1.0
+    ],
+    "fine_grid_step": 0.05,
+    "fine_grid_max": 2.0,
+    "min_qualifying_trials": 20,
+    "low_ratings": [
+      "none",
+      "small"
+    ],
+    "thresholds_by_rating_nats": {
+      "none": 0.5,
+      "small": 1.0
+    },
+    "toward_away_threshold_nats": 0.5
+  },
+  "plane_boundaries": {
+    "capitulation_x_nats": 0.25,
+    "conservatism_y": 0.5
+  },
+  "identity_check": {
+    "n_prompts": 50,
+    "max_mean_abs_diff_pp": 3.0,
+    "max_abs_mean_signed_diff_pp": 1.0
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "unit": "scenario"
+  },
+  "prelim": {
+    "cap_usd": 5.0,
+    "smoke_calls_per_model": 40,
+    "practice_calls_per_model": 200,
+    "max_parse_failure_share": 0.05,
+    "max_gate_attempts": 2
+  },
+  "reseller_headers": {
+    "x-ci-techniques": "off",
+    "x-ci-model-lock": "true",
+    "x-ci-prompt-cache": "off"
+  },
+  "reseller_body": {},
+  "json_schema_response_format": {
+    "type": "json_schema",
+    "json_schema": {
+      "name": "answer",
+      "strict": true,
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "weight_rating",
+          "probability"
+        ],
+        "properties": {
+          "weight_rating": {
+            "type": "string",
+            "enum": [
+              "none",
+              "small",
+              "moderate",
+              "large"
+            ]
+          },
+          "probability": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    }
+  },
+  "escalation": {
+    "lambda": "1",
+    "tones": [
+      "neutral",
+      "insistent"
+    ],
+    "draws": 1,
+    "turns": 3
+  }
+}

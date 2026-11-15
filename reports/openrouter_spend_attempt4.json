@@ -1,0 +1,35 @@
+{
+  "reconciliations": [
+    {
+      "when": "start",
+      "calls_since_start": 0,
+      "account_usage_usd": 2.230219671,
+      "account_run_spend_usd": 0.0,
+      "ledger_spent_usd": 0.0,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "every 500 calls",
+      "calls_since_start": 501,
+      "account_usage_usd": 3.178675971,
+      "account_run_spend_usd": 0.9484563000000001,
+      "ledger_spent_usd": 0.9509191499999993,
+      "gap_added_usd": 0.0
+    },
+    {
+      "when": "end",
+      "calls_since_start": 848,
+      "account_usage_usd": 3.326987971,
+      "account_run_spend_usd": 1.0967683,
+      "ledger_spent_usd": 1.0972107499999988,
+      "gap_added_usd": 0.0
+    }
+  ],
+  "cap_usd": 3.0,
+  "baseline_usage_usd": 2.230219671,
+  "baseline_at": "2026-11-12T06:38:21+00:00",
+  "logged_openrouter_usd": 1.09721075,
+  "account_run_spend_usd": 1.0967683,
+  "checked_at": "2026-11-12T06:52:24+00:00",
+  "note": "cap_usd restored to the enforced $3.00 (D12); a post-run bookkeeping step had rewritten it with the $5 D11 default"
+}

@@ -1,0 +1,176 @@
+{
+  "reasoning_off_candidates": [
+    {
+      "label": "reasoning.enabled=false",
+      "params": {
+        "reasoning": {
+          "enabled": false
+        }
+      }
+    },
+    {
+      "label": "reasoning.effort=none",
+      "params": {
+        "reasoning": {
+          "effort": "none"
+        }
+      }
+    },
+    {
+      "label": "reasoning.effort=minimal",
+      "params": {
+        "reasoning": {
+          "effort": "minimal"
+        }
+      }
+    },
+    {
+      "label": "reasoning.effort=low",
+      "params": {
+        "reasoning": {
+          "effort": "low"
+        }
+      }
+    },
+    {
+      "label": "reasoning=false",
+      "params": {
+        "reasoning": false
+      }
+    }
+  ],
+  "reasoning_on_setting": {
+    "label": "reasoning.effort=medium",
+    "params": {
+      "reasoning": {
+        "effort": "medium"
+      }
+    }
+  },
+  "models": [
+    {
+      "name": "Claude Opus 5.5",
+      "developer": "Anthropic",
+      "price_in": 2.6,
+      "price_out": 13.0,
+      "anchor": true,
+      "pattern": "claude-opus-5[.-]5",
+      "direct_provider": "anthropic"
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "developer": "Anthropic",
+      "price_in": 0.085,
+      "price_out": 0.424,
+      "anchor": false,
+      "pattern": "claude-haiku-5[.-]5"
+    },
+    {
+      "name": "GPT-6.1 Sol",
+      "developer": "OpenAI",
+      "price_in": 1.3,
+      "price_out": 6.5,
+      "anchor": true,
+      "pattern": "gpt-6[.-]1-sol",
+      "direct_provider": "openai"
+    },
+    {
+      "name": "GPT-6 Luna",
+      "developer": "OpenAI",
+      "price_in": 0.085,
+      "price_out": 0.425,
+      "anchor": false,
+      "pattern": "gpt-6-luna"
+    },
+    {
+      "name": "gpt-oss-120b",
+      "developer": "OpenAI",
+      "price_in": 0.052,
+      "price_out": 0.26,
+      "anchor": false,
+      "pattern": "gpt-oss-120b"
+    },
+    {
+      "name": "GPT-4o",
+      "developer": "OpenAI",
+      "price_in": 1.63,
+      "price_out": 6.5,
+      "anchor": false,
+      "pattern": "gpt-4o"
+    },
+    {
+      "name": "Gemini 4 Argon",
+      "developer": "Google",
+      "price_in": 0.9,
+      "price_out": 4.5,
+      "anchor": true,
+      "pattern": "gemini-4-argon",
+      "direct_provider": "google"
+    },
+    {
+      "name": "Gemini 3.8 Flash",
+      "developer": "Google",
+      "price_in": 0.338,
+      "price_out": 1.69,
+      "anchor": false,
+      "pattern": "gemini-3[.-]8-flash"
+    },
+    {
+      "name": "Grok 4.7",
+      "developer": "xAI",
+      "price_in": 1.3,
+      "price_out": 3.9,
+      "anchor": true,
+      "pattern": "grok-4[.-]7",
+      "direct_provider": "xai"
+    },
+    {
+      "name": "Qwen3.8 Max",
+      "developer": "Alibaba",
+      "price_in": 1.3,
+      "price_out": 3.9,
+      "anchor": false,
+      "pattern": "qwen-?3[.-]8-max"
+    },
+    {
+      "name": "Qwen3.8 27B",
+      "developer": "Alibaba",
+      "price_in": 0.325,
+      "price_out": 1.95,
+      "anchor": false,
+      "pattern": "qwen-?3[.-]8-27b"
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "developer": "DeepSeek",
+      "price_in": 0.455,
+      "price_out": 1.37,
+      "anchor": false,
+      "pattern": "deepseek-v4-pro"
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "developer": "Moonshot",
+      "price_in": 1.3,
+      "price_out": 6.5,
+      "anchor": false,
+      "pattern": "kimi-k3[.-]1-pro"
+    },
+    {
+      "name": "Mistral Large 4",
+      "developer": "Mistral",
+      "price_in": 0.578,
+      "price_out": 1.78,
+      "anchor": false,
+      "pattern": "mistral-large-?4"
+    },
+    {
+      "name": "Llama 3.1 8B",
+      "developer": "Meta",
+      "price_in": 0.017,
+      "price_out": 0.034,
+      "anchor": false,
+      "pattern": "llama-?3[.-]1-8b"
+    }
+  ]
+}

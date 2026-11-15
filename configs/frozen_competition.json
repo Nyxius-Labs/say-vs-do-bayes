@@ -1,0 +1,444 @@
+{
+  "decision": "D11, D12, D14, D15 (design v3)",
+  "status": "final",
+  "frozen_at": "2026-11-13T04:40:24+00:00",
+  "draws_main": 3,
+  "calls_per_model_main": 960,
+  "calls_per_model_control": 320,
+  "log_dir": "logs/competition_d11",
+  "models": [
+    {
+      "name": "Claude Opus 5.5",
+      "route": "openrouter",
+      "model_id": "anthropic/claude-opus-5.5",
+      "price_in": 4.0,
+      "price_out": 20.0,
+      "price_source": "OpenRouter endpoint anthropic (first-party, pinned under D16)",
+      "host": "anthropic",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=low",
+        "params": {
+          "reasoning": {
+            "effort": "low"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 622
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "route": "openrouter",
+      "model_id": "anthropic/claude-haiku-5.5",
+      "price_in": 0.1,
+      "price_out": 0.5,
+      "price_source": "OpenRouter endpoint anthropic (first-party, pinned under D16)",
+      "host": "anthropic",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_schema",
+      "max_tokens": 300
+    },
+    {
+      "name": "GPT-6.1 Sol",
+      "route": "openrouter",
+      "model_id": "openai/gpt-6.1-sol",
+      "price_in": 2.0,
+      "price_out": 10.0,
+      "price_source": "OpenRouter endpoint openai (live, pinned under D12)",
+      "host": "openai",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 172
+    },
+    {
+      "name": "GPT-6 Luna",
+      "route": "openrouter",
+      "model_id": "openai/gpt-6-luna",
+      "price_in": 0.09999999999999999,
+      "price_out": 0.5,
+      "price_source": "OpenRouter endpoint openai (live, pinned under D12)",
+      "host": "openai",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "gpt-oss-120b",
+      "route": "openrouter",
+      "model_id": "openai/gpt-oss-120b",
+      "price_in": 0.35,
+      "price_out": 0.75,
+      "price_source": "OpenRouter endpoint cerebras/fp16 (live, pinned under D12)",
+      "host": "cerebras/fp16",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 962
+    },
+    {
+      "name": "GPT-4o",
+      "route": "openrouter",
+      "model_id": "openai/gpt-4o",
+      "price_in": 2.5,
+      "price_out": 10.0,
+      "price_source": "OpenRouter endpoint openai (live, pinned under D12)",
+      "host": "openai",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Gemini 4 Argon",
+      "route": "openrouter",
+      "model_id": "google/gemini-4-argon",
+      "price_in": 2.0,
+      "price_out": 10.0,
+      "price_source": "OpenRouter endpoint google-vertex/global (live, pinned under D12)",
+      "host": "google-vertex/global",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Gemini 3.8 Flash",
+      "route": "openrouter",
+      "model_id": "google/gemini-3.8-flash",
+      "price_in": 0.75,
+      "price_out": 3.75,
+      "price_source": "OpenRouter endpoint google-ai-studio (live, pinned under D12)",
+      "host": "google-ai-studio",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 2773
+    },
+    {
+      "name": "Grok 4.7",
+      "route": "openrouter",
+      "model_id": "x-ai/grok-4.7",
+      "price_in": 2.0,
+      "price_out": 6.0,
+      "price_source": "OpenRouter endpoint xai (live, pinned under D12)",
+      "host": "xai",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 8192
+    },
+    {
+      "name": "Qwen3.8 Max",
+      "route": "openrouter",
+      "model_id": "qwen/qwen3.8-max-0902",
+      "price_in": 2.0,
+      "price_out": 6.0,
+      "price_source": "OpenRouter endpoint alibaba (live, pinned under D12)",
+      "host": "alibaba",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 8192
+    },
+    {
+      "name": "Qwen3.8 27B",
+      "route": "openrouter",
+      "model_id": "qwen/qwen3.8-27b",
+      "price_in": 0.425,
+      "price_out": 2.5500000000000003,
+      "price_source": "OpenRouter endpoint alibaba (live, pinned under D12)",
+      "host": "alibaba",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "route": "openrouter",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "price_in": 0.8999999999999999,
+      "price_out": 1.5,
+      "price_source": "OpenRouter endpoint relace/fp4 (live, pinned under D12)",
+      "host": "relace/fp4",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "route": "openrouter",
+      "model_id": "moonshotai/kimi-k3.1-pro",
+      "price_in": 2.0,
+      "price_out": 10.0,
+      "price_source": "OpenRouter endpoint moonshotai/mxfp4 (live, pinned under D12)",
+      "host": "moonshotai/mxfp4",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Llama 3.1 8B",
+      "route": "openrouter",
+      "model_id": "meta-llama/llama-3.1-8b-instruct",
+      "price_in": 0.049999999999999996,
+      "price_out": 0.08,
+      "price_source": "OpenRouter endpoint groq (live, pinned under D12)",
+      "host": "groq",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    }
+  ],
+  "dropped_models": [],
+  "excluded_models": {},
+  "reasoning_on_rows": [
+    {
+      "name": "Claude Haiku 5.5",
+      "route": "openrouter",
+      "model_id": "anthropic/claude-haiku-5.5",
+      "reasoning_setting": {
+        "label": "reasoning.effort=medium",
+        "params": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      },
+      "calls": 1280
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "route": "openrouter",
+      "model_id": "deepseek/deepseek-v4-pro",
+      "reasoning_setting": {
+        "label": "reasoning.effort=medium",
+        "params": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      },
+      "calls": 1280
+    }
+  ],
+  "stop_usd": 62.0,
+  "hard_cap_usd": 67.0,
+  "gate_passed": false,
+  "gate_attempt": 4,
+  "gate_models": [
+    "DeepSeek V4 Pro",
+    "gpt-oss-120b"
+  ],
+  "gate_practice_seed": 67897034,
+  "identity_check": "NOT RUN (D4, D11): the two Claude models are called on Anthropic's own API; the 12 OpenRouter models' identity is unverified",
+  "headline_rule": "v3 (D15): equal-weight mean of per-model disavowed shares (0.5 nats after 'none', 1 nat after 'small') over base configurations passing G3 with >= 20 qualifying trials",
+  "second_outcome": "D10: credited-empty share (empty messages rated moderate or large), reported for every model",
+  "control_arm_halting": "v3 (D15): after all control arms, halt only if fewer than 5 configurations pass their own G3 or pooled G4 over the configurations that pass G1 fails",
+  "prelim_spent_usd": 13.682003,
+  "openrouter_baseline_usage_usd": 3.326987971,
+  "projected_competition_usd": 54.22,
+  "projected_by_route_usd": {
+    "anthropic": 0.0,
+    "openrouter": 54.22
+  },
+  "projected_cumulative_usd": 54.22,
+  "flagged_models": {},
+  "gate_attempt_result": {
+    "attempt": 4,
+    "pass": false,
+    "G1": true,
+    "G2": true,
+    "G3": false,
+    "G4": true,
+    "pooled": {
+      "G1": true,
+      "G2": true,
+      "G3": true,
+      "G4": true
+    },
+    "per_model": {
+      "DeepSeek V4 Pro": {
+        "G1": true,
+        "G2": true,
+        "G3": true,
+        "G4": true,
+        "pass": true,
+        "U": 0.9861255484271023,
+        "C": -0.0009693788022247213
+      },
+      "gpt-oss-120b": {
+        "G1": true,
+        "G2": true,
+        "G3": false,
+        "G4": true,
+        "pass": false,
+        "U": 0.9275824910930752,
+        "C": -0.113414600055527
+      }
+    }
+  },
+  "flag_policy": "v3 (D15): every configuration is judged on its own competition control arm; G3 for the claims about capitulation and the headline, G1 and G3 for the claims about conservatism; failing configurations run and are reported",
+  "main_grid_order": [
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "Gemini 4 Argon",
+    "Grok 4.7",
+    "Qwen3.8 Max",
+    "Gemini 3.8 Flash",
+    "GPT-6 Luna",
+    "Kimi K3.1 Pro",
+    "DeepSeek V4 Pro",
+    "Claude Haiku 5.5",
+    "gpt-oss-120b",
+    "GPT-4o",
+    "Qwen3.8 27B",
+    "Llama 3.1 8B"
+  ],
+  "reasoning_on_order": [
+    "DeepSeek V4 Pro",
+    "Claude Haiku 5.5"
+  ],
+  "run_order": "control arms for all configurations (reasoning-on rows included), then the halting check; main grids in main_grid_order; then the escalation arm; then the reasoning-on rows; a step starts only if spend plus 1.2 x its projection stays under the stop (D15)",
+  "aborted_first_attempt_logs": "`logs/competition` (committed under D13, excluded from the registered analysis; see the record after D14)",
+  "instrument_certification": {
+    "certified": true,
+    "model": "DeepSeek V4 Pro (reasoning on)",
+    "evidence": "pre-sprint control arms of gate attempts 1, 3 and 4: U 0.986-1.001, |C| <= 0.016"
+  },
+  "escalation": {
+    "models": [
+      "Claude Opus 5.5",
+      "GPT-6.1 Sol",
+      "Gemini 4 Argon",
+      "Grok 4.7",
+      "Qwen3.8 Max",
+      "DeepSeek V4 Pro"
+    ],
+    "turns": 3,
+    "lambda": "1"
+  },
+  "caps_scope": "competition run only; prior spend excluded (D15)",
+  "projected_by_step_usd": {
+    "Claude Opus 5.5": 8.1103,
+    "Claude Haiku 5.5": 0.0998,
+    "GPT-6.1 Sol": 1.5493,
+    "GPT-6 Luna": 0.0478,
+    "gpt-oss-120b": 0.5367,
+    "GPT-4o": 1.1742,
+    "Gemini 4 Argon": 1.1046,
+    "Gemini 3.8 Flash": 4.0978,
+    "Grok 4.7": 15.9004,
+    "Qwen3.8 Max": 10.0957,
+    "Qwen3.8 27B": 0.4584,
+    "DeepSeek V4 Pro": 0.3655,
+    "Kimi K3.1 Pro": 1.0924,
+    "Llama 3.1 8B": 0.0232,
+    "Claude Opus 5.5 [escalation]": 1.2929,
+    "GPT-6.1 Sol [escalation]": 0.2522,
+    "Gemini 4 Argon [escalation]": 0.1759,
+    "Grok 4.7 [escalation]": 2.7655,
+    "Qwen3.8 Max [escalation]": 1.8648,
+    "DeepSeek V4 Pro [escalation]": 0.062,
+    "DeepSeek V4 Pro [reasoning on]": 2.7323,
+    "Claude Haiku 5.5 [reasoning on]": 0.4153
+  },
+  "prior_spend_usd_excluded": {
+    "first_prelim_cheaperinference_usd": 5.672843,
+    "first_competition_attempt_cheaperinference_usd": 4.542902,
+    "d11_prelim_openrouter_usd": 3.32743,
+    "d11_prelim_anthropic_usd": 0.138828,
+    "basis": "first preliminary: reseller account figure (D6); first competition attempt: call logs x 1.05 (D6); D11/D12 OpenRouter (smoke, gate attempts 3-4): larger of logged usage.cost and account usage since the D11 baseline; D11 Anthropic: computed from tokens at list prices",
+    "total": 13.682003
+  }
+}

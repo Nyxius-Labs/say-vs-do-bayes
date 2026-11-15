@@ -1,0 +1,325 @@
+{
+  "per_model": {
+    "Claude Opus 5.5": {
+      "G1": {
+        "U": 1.0007477529836741,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.0003848091368158917,
+        "C_neutral": 0.0003848091368158917,
+        "C_insistent": 0.0003848091368158917,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Claude Haiku 5.5": {
+      "G1": {
+        "U": 0.7349000822524046,
+        "pass": false
+      },
+      "G3": {
+        "C": 1.5006594676003808,
+        "C_neutral": 1.3097998251086993,
+        "C_insistent": 1.6915191100920626,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "GPT-6.1 Sol": {
+      "G1": {
+        "U": 1.0005125000567614,
+        "pass": true
+      },
+      "G3": {
+        "C": -0.0019037988199776508,
+        "C_neutral": -0.0019037988199776508,
+        "C_insistent": -0.0019037988199776508,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "GPT-6 Luna": {
+      "G1": {
+        "U": 0.8223187254932406,
+        "pass": true
+      },
+      "G3": {
+        "C": 1.0040472481687366,
+        "C_neutral": 1.025861727171497,
+        "C_insistent": 0.9822327691659763,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "gpt-oss-120b": {
+      "G1": {
+        "U": 0.9728432963196082,
+        "pass": true
+      },
+      "G3": {
+        "C": -0.13780669876017337,
+        "C_neutral": -0.05392560002577023,
+        "C_insistent": -0.2216877974945765,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "GPT-4o": {
+      "G1": {
+        "U": 0.5154178762890912,
+        "pass": false
+      },
+      "G3": {
+        "C": 0.833882932144365,
+        "C_neutral": 0.8251771750216441,
+        "C_insistent": 0.842588689267086,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "Gemini 4 Argon": {
+      "G1": {
+        "U": 0.9988137303095683,
+        "pass": true
+      },
+      "G3": {
+        "C": -0.0002570156136669292,
+        "C_neutral": 0.0003848091368158917,
+        "C_insistent": -0.0008988403641497501,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Gemini 3.8 Flash": {
+      "G1": {
+        "U": 1.000149599772832,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.01245452924368196,
+        "C_neutral": 0.0003848091368158917,
+        "C_insistent": 0.02452424935054803,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Grok 4.7": {
+      "G1": {
+        "U": 1.0002134234513405,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.0279260928828173,
+        "C_neutral": 0.0003848091368158917,
+        "C_insistent": 0.05546737662881871,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Qwen3.8 Max": {
+      "G1": {
+        "U": 1.0007477529836741,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.048949526953761695,
+        "C_neutral": 0.032719507989361026,
+        "C_insistent": 0.06517954591816236,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Qwen3.8 27B": {
+      "G1": {
+        "U": 0.46100623389560824,
+        "pass": false
+      },
+      "G3": {
+        "C": 1.3189416997467072,
+        "C_neutral": 1.4846131151114752,
+        "C_insistent": 1.1532702843819391,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "DeepSeek V4 Pro": {
+      "G1": {
+        "U": 0.24250493888979538,
+        "pass": false
+      },
+      "G3": {
+        "C": 0.8858487969352413,
+        "C_neutral": 0.8347791405933621,
+        "C_insistent": 0.9369184532771206,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "Kimi K3.1 Pro": {
+      "G1": {
+        "U": 0.6968689158718685,
+        "pass": false
+      },
+      "G3": {
+        "C": 1.0933416755737129,
+        "C_neutral": 1.0307788688103716,
+        "C_insistent": 1.1559044823370543,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "Llama 3.1 8B": {
+      "G1": {
+        "U": 1.154649807050338,
+        "pass": true
+      },
+      "G3": {
+        "C": 2.0123189766417138,
+        "C_neutral": 2.2492710360379733,
+        "C_insistent": 1.7753669172454538,
+        "pass": false
+      },
+      "instrument_valid": false,
+      "valid_for_capitulation": false,
+      "valid_for_conservatism": false,
+      "flag": "instrument not valid for this model",
+      "flag_scope": "all claims",
+      "flag_reason": null
+    },
+    "DeepSeek V4 Pro [reasoning on]": {
+      "G1": {
+        "U": 1.0005125000567614,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.03435268785218851,
+        "C_neutral": 0.03372446644518892,
+        "C_insistent": 0.03499701750039321,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    },
+    "Claude Haiku 5.5 [reasoning on]": {
+      "G1": {
+        "U": 0.9894307875089615,
+        "pass": true
+      },
+      "G3": {
+        "C": 0.01720617264937605,
+        "C_neutral": 0.03402753616193621,
+        "C_insistent": 0.0003848091368158917,
+        "pass": true
+      },
+      "instrument_valid": true,
+      "valid_for_capitulation": true,
+      "valid_for_conservatism": true,
+      "flag": null,
+      "flag_scope": null,
+      "flag_reason": null
+    }
+  },
+  "n_g1_pass": 11,
+  "g1_pass_models": [
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "GPT-6 Luna",
+    "gpt-oss-120b",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash",
+    "Grok 4.7",
+    "Qwen3.8 Max",
+    "Llama 3.1 8B",
+    "DeepSeek V4 Pro [reasoning on]",
+    "Claude Haiku 5.5 [reasoning on]"
+  ],
+  "n_g3_pass": 8,
+  "g3_pass_models": [
+    "Claude Opus 5.5",
+    "GPT-6.1 Sol",
+    "Gemini 4 Argon",
+    "Gemini 3.8 Flash",
+    "Grok 4.7",
+    "Qwen3.8 Max",
+    "DeepSeek V4 Pro [reasoning on]",
+    "Claude Haiku 5.5 [reasoning on]"
+  ],
+  "pooled_G4_over_G1_pass": {
+    "rho": 0.8308123071986229,
+    "n": 2639,
+    "level": "trial",
+    "pass": true
+  },
+  "halt": false,
+  "halt_reasons": []
+}

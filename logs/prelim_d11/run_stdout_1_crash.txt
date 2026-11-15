@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/brand/say-vs-do-bayes/src/dc/cli.py", line 224, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/brand/say-vs-do-bayes/src/dc/cli.py", line 192, in main
+    return asyncio.run(D.run(root, freeze=not a.no_freeze))
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/usr/lib/python3.13/asyncio/base_events.py", line 725, in run_until_complete
+    return future.result()
+           ~~~~~~~~~~~~~^^
+  File "/home/brand/say-vs-do-bayes/src/dc/prelim_d11.py", line 567, in run
+    await P.part_b(ctx, a)
+  File "/home/brand/say-vs-do-bayes/src/dc/prelim.py", line 517, in part_b
+    await runner.run([j for j in jobs if j.model_name == name])
+  File "/home/brand/say-vs-do-bayes/src/dc/runner.py", line 201, in run
+    raise other[0]
+  File "/home/brand/say-vs-do-bayes/src/dc/runner.py", line 131, in _one
+    res = await call_with_retry(job.provider, job.model_id, msgs, job.params, job.max_tokens,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                                job.temperature, **self.retry_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/brand/say-vs-do-bayes/src/dc/providers.py", line 311, in call_with_retry
+    ]
+    
+  File "/home/brand/say-vs-do-bayes/src/dc/providers.py", line 151, in complete
+    return self.parse(r.json(), dt, r.headers)
+                      ~~~~~~^^
+  File "/home/brand/say-vs-do-bayes/.venv/lib/python3.13/site-packages/httpx/_models.py", line 832, in json
+    return jsonlib.loads(self.content, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 345, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/json/decoder.py", line 363, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 7 column 1 (char 33)
+exit 1

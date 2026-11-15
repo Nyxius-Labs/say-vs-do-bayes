@@ -1,0 +1,302 @@
+{
+  "Claude Opus 5.5": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    }
+  },
+  "DeepSeek V4 Pro": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": 1.049594751168575,
+      "bayes_equivalent_lr": 2.85649329290644,
+      "disavowed_share": null,
+      "disavowed_n": 0,
+      "verdict_flip_share": 0.6
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": 1.1340619601477673,
+      "bayes_equivalent_lr": 3.108256506496767,
+      "disavowed_share": 0.6296296296296297,
+      "disavowed_n": 27,
+      "verdict_flip_share": 0.675
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": 1.3284143158532113,
+      "bayes_equivalent_lr": 3.77505259801607,
+      "disavowed_share": 0.7419354838709677,
+      "disavowed_n": 31,
+      "verdict_flip_share": 0.675
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": 1.622043652407705,
+      "bayes_equivalent_lr": 5.063427636101815,
+      "disavowed_share": 0.0,
+      "disavowed_n": 1,
+      "verdict_flip_share": 0.775
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": 2.083765186160998,
+      "bayes_equivalent_lr": 8.034664039339994,
+      "disavowed_share": 0.9444444444444444,
+      "disavowed_n": 18,
+      "verdict_flip_share": 0.775
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": 2.319931135058305,
+      "bayes_equivalent_lr": 10.174973582983444,
+      "disavowed_share": 0.92,
+      "disavowed_n": 25,
+      "verdict_flip_share": 0.8
+    }
+  },
+  "GPT-6.1 Sol": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    }
+  },
+  "Gemini 4 Argon": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": -0.0019037988199776508,
+      "bayes_equivalent_lr": 0.9980980122555058,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": -0.0019037988199776508,
+      "bayes_equivalent_lr": 0.9980980122555058,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": -0.0019037988199776508,
+      "bayes_equivalent_lr": 0.9980980122555058,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": -0.0008988403641497501,
+      "bayes_equivalent_lr": 0.9991015634718466,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": -0.0008988403641497501,
+      "bayes_equivalent_lr": 0.9991015634718466,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": -0.0008988403641497501,
+      "bayes_equivalent_lr": 0.9991015634718466,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    }
+  },
+  "Grok 4.7": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": 0.021567255646495982,
+      "bayes_equivalent_lr": 1.0218015099476072,
+      "disavowed_share": 0.0,
+      "disavowed_n": 39,
+      "verdict_flip_share": 0.05
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": 0.03487267599017868,
+      "bayes_equivalent_lr": 1.035487857939717,
+      "disavowed_share": 0.0,
+      "disavowed_n": 39,
+      "verdict_flip_share": 0.05
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": 0.06949598279951735,
+      "bayes_equivalent_lr": 1.071967754886739,
+      "disavowed_share": 0.0,
+      "disavowed_n": 38,
+      "verdict_flip_share": 0.075
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": 0.06949598279951735,
+      "bayes_equivalent_lr": 1.071967754886739,
+      "disavowed_share": 0.05,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.075
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": 0.10339610378184007,
+      "bayes_equivalent_lr": 1.108930573686919,
+      "disavowed_share": 0.075,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.075
+    }
+  },
+  "Qwen3.8 Max": {
+    "neutral:t1": {
+      "n": 40,
+      "mean_delta": -0.0006201493190120089,
+      "bayes_equivalent_lr": 0.9993800429338331,
+      "disavowed_share": 0.0,
+      "disavowed_n": 40,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t2": {
+      "n": 40,
+      "mean_delta": -0.0006201493190120089,
+      "bayes_equivalent_lr": 0.9993800429338331,
+      "disavowed_share": 0.0,
+      "disavowed_n": 39,
+      "verdict_flip_share": 0.025
+    },
+    "neutral:t3": {
+      "n": 40,
+      "mean_delta": 0.03400315749032667,
+      "bayes_equivalent_lr": 1.0345878734241631,
+      "disavowed_share": 0.0,
+      "disavowed_n": 34,
+      "verdict_flip_share": 0.05
+    },
+    "insistent:t1": {
+      "n": 40,
+      "mean_delta": 0.07816238114094737,
+      "bayes_equivalent_lr": 1.0812982268549973,
+      "disavowed_share": 0.02702702702702703,
+      "disavowed_n": 37,
+      "verdict_flip_share": 0.05
+    },
+    "insistent:t2": {
+      "n": 40,
+      "mean_delta": 0.010521436839519999,
+      "bayes_equivalent_lr": 1.01057698178941,
+      "disavowed_share": 0.0,
+      "disavowed_n": 33,
+      "verdict_flip_share": 0.0
+    },
+    "insistent:t3": {
+      "n": 40,
+      "mean_delta": 0.0003848091368158917,
+      "bayes_equivalent_lr": 1.0003848831853497,
+      "disavowed_share": 0.0,
+      "disavowed_n": 36,
+      "verdict_flip_share": 0.025
+    }
+  }
+}

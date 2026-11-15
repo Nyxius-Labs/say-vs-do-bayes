@@ -1,0 +1,251 @@
+{
+  "frozen_at": "2026-11-12T04:36:07+00:00",
+  "draws_main": 2,
+  "calls_per_model_main": 640,
+  "calls_per_model_control": 320,
+  "models": [
+    {
+      "name": "Claude Opus 5.5",
+      "reseller_id": "claude-opus-5.5",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 3804
+    },
+    {
+      "name": "Claude Haiku 5.5",
+      "reseller_id": "claude-haiku-5.5",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_schema",
+      "max_tokens": 300
+    },
+    {
+      "name": "GPT-6.1 Sol",
+      "reseller_id": "gpt-6.1-sol",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 4096
+    },
+    {
+      "name": "GPT-6 Luna",
+      "reseller_id": "gpt-6-luna",
+      "label": "reasoning-off (unverified: reasoning tokens not reported)",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "gpt-oss-120b",
+      "reseller_id": "gpt-oss-120b",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "response_format": "json_schema",
+      "max_tokens": 1200
+    },
+    {
+      "name": "GPT-4o",
+      "reseller_id": "gpt-4o",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Gemini 4 Argon",
+      "reseller_id": "gemini-4-argon",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 4096
+    },
+    {
+      "name": "Gemini 3.8 Flash",
+      "reseller_id": "gemini-3.8-flash",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.effort=minimal",
+        "params": {
+          "reasoning": {
+            "effort": "minimal"
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 3098
+    },
+    {
+      "name": "Grok 4.7",
+      "reseller_id": "grok-4.7",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 4096
+    },
+    {
+      "name": "Qwen3.8 Max",
+      "reseller_id": "qwen3.8-max",
+      "label": "thinking not disableable, lowest setting",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 4096
+    },
+    {
+      "name": "Qwen3.8 27B",
+      "reseller_id": "qwen3.8-27b",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "reseller_id": "deepseek-v4-pro",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "reasoning=false",
+        "params": {
+          "reasoning": false
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Kimi K3.1 Pro",
+      "reseller_id": "kimi-k3.1-pro",
+      "label": "reasoning-off (unverified: reasoning tokens not reported)",
+      "reasoning_setting": {
+        "label": "reasoning.enabled=false",
+        "params": {
+          "reasoning": {
+            "enabled": false
+          }
+        }
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    },
+    {
+      "name": "Llama 3.1 8B",
+      "reseller_id": "llama-3.1-8b",
+      "label": "reasoning-off",
+      "reasoning_setting": {
+        "label": "none sent (catalog: non-reasoning model)",
+        "params": {}
+      },
+      "response_format": "json_only",
+      "max_tokens": 300
+    }
+  ],
+  "dropped_models": [],
+  "excluded_models": {
+    "Mistral Large 4": "excluded: 1 truncated JSON of 40 calls and 97.5% parsed at max_tokens=4096 (D1 cap 4,096 reached)"
+  },
+  "reasoning_on_rows": [
+    {
+      "name": "Claude Haiku 5.5",
+      "reseller_id": "claude-haiku-5.5",
+      "reasoning_setting": {
+        "label": "reasoning.effort=medium",
+        "params": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      },
+      "calls": 640
+    },
+    {
+      "name": "DeepSeek V4 Pro",
+      "reseller_id": "deepseek-v4-pro",
+      "reasoning_setting": {
+        "label": "reasoning.effort=medium",
+        "params": {
+          "reasoning": {
+            "effort": "medium"
+          }
+        }
+      },
+      "calls": 640
+    }
+  ],
+  "prelim_spent_usd": 5.672843,
+  "projected_competition_usd": 42.4484,
+  "projected_cumulative_usd": 48.1213,
+  "stop_usd": 55.0,
+  "hard_cap_usd": 60.0,
+  "gate_passed": true,
+  "identity_check": "NOT RUN: no direct provider access",
+  "headline_rule": "D10: pooled disavowed capitulation over instrument-valid models with >= 20 qualifying main-grid trials, pooling trials; the number of models covered is reported",
+  "second_outcome": "D10: credited-empty share (empty messages rated moderate or large), reported for every model",
+  "control_arm_halting": "the registered run halts only if pooled G4 over the models that pass their own control-arm G1 fails, or fewer than 10 models pass their own G1; a model failing its own G1 or G3 is still run, flagged \"instrument not valid for this model\", reported separately, and excluded from headline claims (D9)",
+  "gate_attempt": 2,
+  "gate_models": [
+    "DeepSeek V4 Pro",
+    "gpt-oss-120b"
+  ]
+}

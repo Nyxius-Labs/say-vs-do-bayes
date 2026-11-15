@@ -1,0 +1,18 @@
+{
+  "attempts": [
+    {
+      "attempt": 3,
+      "decision": "D11",
+      "n_practice": 100,
+      "practice_seed": 35588301,
+      "result": "FAIL"
+    },
+    {
+      "attempt": 4,
+      "decision": "D12 (gate re-run on pinned hosts; D7 gate models, D8 practice size, fresh seed)",
+      "n_practice": 100,
+      "practice_seed": 67897034,
+      "result": "FAIL"
+    }
+  ]
+}
